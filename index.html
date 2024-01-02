@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en" style="scroll-behavior: smooth;">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap project</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <style>
+        .card-img-top {
+            width: 100%;
+            height: 15vw; /* Default height for larger screens */
+            object-fit: cover;
+        }
+
+        .card {
+            margin-bottom: 25px;
+        }
+
+        @media (max-width: 575.98px) {
+            /* Adjust height for extra-small screens */
+            .card-img-top {
+                height: 40vw;
+            }
+        }
+        .form-horizontal{
+         display:block;
+         margin-left:auto;
+         margin-right:auto;
+}
+.fade-in {
+        opacity: 0; /* Start with 0 opacity */
+        animation: fadeInAnimation 1s ease-in-out forwards;
+    }
+
+    @keyframes fadeInAnimation {
+        from {
+            opacity: 0;
+        }
+        to {
+            opacity: 1;
+        }
+    }
+    </style>
+<body id="home" class="fade-in" >
+    <nav class="navbar navbar-expand-lg bg-body-tertiary p-2 "style="position:fixed; width:100%; z-index=1;>
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Alvin Liju</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav justify-content-end">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#home">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#Hobbies">Hobbies</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#About-me">About me</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <section>
+        <div class="container" style="margin-bottom: 100px;">
+        <div class="row align-items-center" style="padding-top: 240px; padding-bottom: 100px;">
+            <div class="col-md-6">
+            <div class="container">
+            <img class="img-fluid rounded-circle" src="https://i.pinimg.com/564x/f9/9b/ee/f99bee1eabea25abe9e34f5cc2f2d427.jpg">
+        </div>
+            </div>
+            <div class="col-md-6">
+                <h2 class="pb-0 pl-2" >Alvin</h2>
+                <h3 class="pb-4 pt-0 pl-2 text-muted"style="padding:0;">Junior webdev<br>Kerala,India
+                </h3>
+                <p class="p-1 mb-11" style="margin-bottom: 100px;">"it always seems impossible until its done"</p>
+            </div>
+        </div>
+    </div>
+      </section>
+      <section>
+        <div class="container" id="Hobbies" style="margin-top: 200px;">
+            <h2 class="text-center pt-0.5 mt-10 mb-100" style="margin-bottom:80px;">Hobbies</h2>
+            <div class="row align-items-center" style="margin-top: 150px;">
+                <div class="col-lg col-12"><div class="card custom-card" ">
+                    <img src="https://i.pinimg.com/474x/5f/f6/15/5ff615353864395b66d9e17d4f4b3965.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <p class="card-text text-center">Coding</p>
+                    </div>
+                  </div></div>
+                <div class="col-lg col-12 text-center"><div class="card w-18 h-100" ;">
+                    <img src="https://i.pinimg.com/474x/22/21/b6/2221b61a1589a476f40ba753b422b991.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <p class="card-text">Gym</p>
+                    </div>
+                  </div></div>
+                <div class="col-lg col-12 text-center"><div class="card custom-card" ">
+                    <img src="/Bootstrap/lp_image.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <p class="card-text">Chelsie</p>
+                    </div>
+                  </div></div>
+            </div>
+      </section>
+      <section>
+        <div class="container" id="About-me" style="margin-top: 200px;">
+            <div class="row">
+                <h2 class="text-center pt-10 pb-3 mb-20 mt-30">About me</h2>
+                <div class="col-md-12">
+                    <p class="p-3 pd-10 mb-5">Embarking on the adventurous journey of life, I've reached a point where I can finally do whatever I want, and doing it with you makes it all the more exciting. I'm the kind of person who believes in savoring every moment, much like how I would devour a slice of cake and, well, maybe I'd eat you after eating cake – metaphorically speaking, of course! I enjoy adding a dash of spontaneity to life, always ready to pull your hair (metaphorically or not) even if you don't think you want it. So, if you're up for a blend of thrill, sweetness, and a touch of playful mischief, you're in for a ride with me!</p>
+                </div>
+            </div>
+        </div>
+      </section>
+      <section>
+        <div class="container" id="Contact" style="margin-top: 150px;">
+            <h2 class="text-center mb-3" >Contact me quick!</h2>
+          <div class="row">
+            <div class="col-md-12 ">
+                <form class="row g-3 mx-auto pl-20">
+                    <div class="col-md-6">
+                      <label for="inputName" class="form-label">Your Name</label>
+                      <input type="text" class="form-control" id="inputName" placeholder="John Doe">
+                    </div>
+                    <div class="col-md-6">
+                      <label for="inputEmail" class="form-label">Your Email</label>
+                      <input type="email" class="form-control" id="inputEmail" placeholder="john@example.com">
+                    </div>
+                    <div class="col-12">
+                      <label for="inputMessage" class="form-label">Your Message</label>
+                      <textarea class="form-control" id="inputMessage" rows="4" placeholder="Type your message here"></textarea>
+                    </div>
+                    <div class="col-12">
+                      <button type="submit" class="btn btn-primary">Send</button>
+                    </div>
+                  </form>
+                  
+              </div>
+          </div>
+        </div>
+      </section>
+</body>
+</html>
